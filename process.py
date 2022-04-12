@@ -32,9 +32,9 @@ def changeBlur(img,value):
 def tsg_process(params):
 	print("Parameters:",params)
 	"""Video streaming generator function."""
-	CAMERA=True
+	CAMERA=False
 	if CAMERA:
-		cap = cv2.VideoCapture(0)
+		cap = cv2.VideoCapture(1)
 	else:
 		cap = cv2.VideoCapture('Video/shubhgurukul.mp4')
 	print('FUNCTION DONE')
